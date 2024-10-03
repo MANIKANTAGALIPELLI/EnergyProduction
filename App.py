@@ -25,7 +25,7 @@ def welcome():
 # defining the function which will make the prediction using the data which the user inputs
 def prediction(temperature,exhaust_vacuum,amb_pressure,r_humidity):
 
-    data=pd.read_csv("C:\\Users\\jalli\\Downloads\\Copy of energy_production (1).csv",sep=';')
+    data=pd.read_csv("D:\\Datascience\\Project\\Project 3\\Copy of energy_production (1).csv",sep=';')
     data_cleaned = data.drop_duplicates()
     # data_cleaned.to_csv('cleaned_file_no_duplicates.csv', index=False)
     # print(data_cleaned.head())
