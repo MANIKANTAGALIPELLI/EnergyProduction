@@ -105,7 +105,7 @@ def main():
     # and store it in the variable result
     if st.button("Predict"):
         result=rf_model.predict(
-        [[temperature,exhaust_vacuum,amb_pressure,r_humidity]])
+        [[exhaust_vacuum,amb_pressure,r_humidity]])
     st.success('Energy Production is {}'.format(result))
 
 if __name__=='__main__':
