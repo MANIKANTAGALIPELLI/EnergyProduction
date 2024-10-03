@@ -14,20 +14,13 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 
 
-# Loading in the Model to predict on the data
-# pickle_in = open('rf_model.pkl','rb')
-# rf_model = pickle.load(pickle_in)
+
 
 
 def welcome():
     return 'welcome all'
 
-# defining the function which will make the prediction using the data which the user inputs
-# def prediction(temperature,exhaust_vacuum,amb_pressure,r_humidity):
 
-    
-    # print(prediction)
-    # return prediction
 
 
 # this is the main function in which we define our webpage 
@@ -97,9 +90,7 @@ def main():
     # Fit the model
     rf_model.fit(X_train, y_train)
 
-    # Predict on the test set
-    # y_pred_rf = rf_model.predict(X_test)
-    # prediction = rf_model.predict( [[temperature,exhaust_vacuum,amb_pressure,r_humidity]])
+  
     # the below line ensures that when the button called 'Predict' is clicked, 
     # the prediction function defined above is called to make the prediction 
     # and store it in the variable result
