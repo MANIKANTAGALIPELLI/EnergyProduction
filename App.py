@@ -99,8 +99,7 @@ def main():
 
     # Predict on the test set
     # y_pred_rf = rf_model.predict(X_test)
-    prediction = rf_model.predict(
-        [[temperature,exhaust_vacuum,amb_pressure,r_humidity]])
+    # prediction = rf_model.predict( [[temperature,exhaust_vacuum,amb_pressure,r_humidity]])
     # the below line ensures that when the button called 'Predict' is clicked, 
     # the prediction function defined above is called to make the prediction 
     # and store it in the variable result
