@@ -54,7 +54,7 @@ def main():
     r_humidity= st.text_input("r_humidity", "Type Here")
 
     result =""
-    data=pd.read_csv("D:\\Datascience\\Project\\Project 3\\Copy of energy_production (1).csv",sep=';')
+    data=pd.read_csv("Copy of energy_production (1).csv",sep=';')
     data_cleaned = data.drop_duplicates()
     # data_cleaned.to_csv('cleaned_file_no_duplicates.csv', index=False)
     # print(data_cleaned.head())
